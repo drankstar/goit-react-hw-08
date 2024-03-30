@@ -1,7 +1,5 @@
-import { createSlice, createSelector } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit"
 import { addContact, deleteContacts, fetchContacts } from "./operations"
-import { selectNameFilter } from "../filters/slice"
-import { toStandartRegister } from "../../utils/a"
 
 const initialState = {
   items: [],
@@ -59,12 +57,3 @@ const contactsSlice = createSlice({
 export const { selectContacts } = contactsSlice.selectors
 
 export default contactsSlice.reducer
-
-export const selectFilteredContacts = createSelector(
-  [selectContacts, selectNameFilter],
-  (contacts, filterValue) => {
-    return contacts.filter((el) =>
-      toStandartRegister(el.name).includes(toStandartRegister(filterValue))
-    )
-  }
-)
