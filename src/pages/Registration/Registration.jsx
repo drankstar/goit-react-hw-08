@@ -1,8 +1,9 @@
 import RegistrationForm from "../../components/RegistrationForm/RegistrationForm"
+import styles from "./Registration.module.css"
 
 const Registration = () => {
   return (
-    <div>
+    <div className={styles.RegistrationFormWrap}>
       <RegistrationForm />
     </div>
   )

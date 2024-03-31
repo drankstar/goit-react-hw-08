@@ -1,0 +1,50 @@
+.logimForm {
+
+    width: 400px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 24px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.loginWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+
+}
+
+.label {
+    font-size: 12px;
+    margin-bottom: 4px;
+
+}
+
+.fild {
+    width: 350px;
+    padding: 4px 12px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+}
+
+.loginBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.loginBtn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 70px 120px -15px, rgba(0, 0, 0, 0.3) 0px 30px 80px -30px, rgba(10, 37, 64, 0.35) 0px 5px 9px 0px inset;
+}

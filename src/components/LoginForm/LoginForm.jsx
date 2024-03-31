@@ -1,6 +1,7 @@
 import { Field, Form, Formik } from "formik"
 import { useDispatch } from "react-redux"
 import { login } from "../../redux/auth/operations"
+import styles from "./LoginForm.module.css"
 
 const LoginForm = () => {
   const dispatch = useDispatch()
@@ -16,16 +17,20 @@ const LoginForm = () => {
       }}
       onSubmit={handleSubmit}
     >
-      <Form autoComplete='off'>
-        <label>
-          Email
-          <Field type='email' name='email' />
-        </label>
-        <label>
-          Password
-          <Field type='password' name='password' />
-        </label>
-        <button type='submit'>Log In</button>
+      <Form className={styles.logimForm} autoComplete='off'>
+        <div className={styles.loginWrap}>
+          <label className={styles.label}>
+            Email
+            <Field className={styles.fild} type='email' name='email' />
+          </label>
+          <label>
+            Password
+            <Field className={styles.fild} type='password' name='password' />
+          </label>
+        </div>
+        <button className={styles.loginBtn} type='submit'>
+          Log In
+        </button>
       </Form>
     </Formik>
   )
