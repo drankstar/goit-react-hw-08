@@ -10,7 +10,7 @@ const UserMenu = () => {
 
   return (
     <div className={styles.menuBox}>
-      <p>Welcome , {user.name} </p>
+      <p className={styles.text}>Welcome , {user.name} </p>
       <button
         className={styles.menuBtn}
         type='button'
