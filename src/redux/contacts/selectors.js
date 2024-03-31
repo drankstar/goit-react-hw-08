@@ -1,7 +1,8 @@
 import { createSelector } from "@reduxjs/toolkit"
-import { toStandartRegister } from "../../utils/toStandartRegister"
+
 import { selectNameFilter } from "../filters/slice"
 import { selectContacts } from "./slice"
+import { toStandartRegister } from "../../utils/toStandartRegister"
 
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectNameFilter],

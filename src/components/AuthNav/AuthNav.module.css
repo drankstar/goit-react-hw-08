@@ -1,0 +1,12 @@
+.link {
+    padding: 15px;
+    color: rgba(39, 38, 38, 0.541);
+}
+
+.link:hover {
+    color: rgb(255, 60, 0);
+}
+
+.isActive {
+    color: rgb(255, 60, 0);
+}
