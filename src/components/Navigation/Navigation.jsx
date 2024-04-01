@@ -9,7 +9,7 @@ const Navigation = () => {
     <nav>
       <NavLink className={getClassLink} to='/'>
         Home
-      </NavLink>{" "}
+      </NavLink>
       {isLoggedIn && (
         <NavLink className={getClassLink} to='/contacts'>
           Contacts
