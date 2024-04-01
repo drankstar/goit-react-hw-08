@@ -19,8 +19,8 @@ const Contacts = () => {
     <div className={styles.wrap}>
       <h1 className={styles.title}>Phonebook</h1>
       <ContactForm />
-      {contacts.length === 0 ? <p>Add your first contact</p> : <SearchBox />}
-      <ContactList />
+      <SearchBox />
+      {contacts.length === 0 ? <p>Contacts not find</p> : <ContactList />}
     </div>
   )
 }

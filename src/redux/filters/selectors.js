@@ -1,12 +1,9 @@
 import { createSelector } from "@reduxjs/toolkit"
+// import { selectNameFilter } from "./slice"
 
-export const selectors = createSelector({
-  selectors: {
-    selectNameFilter: (state) => state.name,
-  },
-  reducers: {
-    changeFilter(state, action) {
-      state.name = action.payload
-    },
-  },
-})
+const selectNameFilter = (state) => state
+
+export const selectFilteredName = createSelector(
+  selectNameFilter,
+  (state) => state.filters.name
+)
